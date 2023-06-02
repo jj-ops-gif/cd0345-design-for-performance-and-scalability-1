@@ -1,0 +1,20 @@
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,8009.94,96119.28,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Initial_Cost_Estimate,US East (N. Virginia),Web servers,Amazon EC2 ,0,2649.9,31798.8,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 150), Advance EC2 instance (t4g.medium), Pricing strategy ( 1 Year  None upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Initial_Cost_Estimate,US East (N. Virginia),Application load balancers,Application Load Balancer,0,616.85,7402.2,USD,,Number of Application Load Balancers (2)
+Initial_Cost_Estimate,US East (N. Virginia),RDS,Amazon RDS for MySQL,0,4423,53076,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (300 GB), Quantity (1), Instance type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Total Size of Backup Processed for Export (GB) (100 per month), Additional backup storage (100 GB)"
+Initial_Cost_Estimate,US East (N. Virginia),S3,S3 Standard,0,48.03,576.36,USD,,S3 Standard storage (1500 GB per month)
+Initial_Cost_Estimate,US East (N. Virginia),S3,Data Transfer,0,92.16,1105.92,USD,,"DT Inbound: Internet (100 TB per month), DT Outbound: Amazon CloudFront (100 TB per month), DT Outbound: Internet (1 TB per month)"
+Initial_Cost_Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,155,1860,USD,,"Data transfer out to internet (1000 GB per month), Data transfer out to origin (1000 GB per month), Number of requests (HTTPS) (50000000 per month)"
+Initial_Cost_Estimate,US East (N. Virginia),Elastic IP,Amazon Elastic IP,0,25,300,USD,,"Number of EC2 instances (50), Number of EIPs per instance (1)"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Acknowledgement,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,

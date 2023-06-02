@@ -1,0 +1,26 @@
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+1530,6191.8,75831.6,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Reduced_Cost_Estimate,US East (N. Virginia),Web servers,Amazon EC2 ,0,1413.28,16959.36,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 80), Advance EC2 instance (t4g.medium), Pricing strategy ( 1 Year  None upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),Application load balancers,Application Load Balancer,0,308.43,3701.16,USD,,Number of Application Load Balancers (1)
+Reduced_Cost_Estimate,US East (N. Virginia),S3,S3 Standard,0,48.03,576.36,USD,,S3 Standard storage (1500 GB per month)
+Reduced_Cost_Estimate,US East (N. Virginia),S3,Data Transfer,0,92.16,1105.92,USD,,"DT Inbound: Internet (100 TB per month), DT Outbound: Amazon CloudFront (100 TB per month), DT Outbound: Internet (1 TB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,155,1860,USD,,"Data transfer out to internet (1000 GB per month), Data transfer out to origin (1000 GB per month), Number of requests (HTTPS) (50000000 per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),Elastic IP,Amazon Elastic IP,0,25,300,USD,,"Number of EC2 instances (50), Number of EIPs per instance (1)"
+Reduced_Cost_Estimate,US East (N. Virginia),API Gateway for Application Server,Amazon API Gateway,0,1913.1,22957.2,USD,,"HTTP API requests units (millions), Average size of each request (34 KB), REST API request units (millions), Cache memory size (GB) (None), WebSocket message units (thousands), Average message size (32 KB), Requests (0 per month), Requests (600 per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),Lambda for Application Servers,AWS Lambda,0,929.4,11152.8,USD,,"Invoke Mode (Buffered), Architecture (x86), Architecture (x86), Number of requests (500000000 per month), Amount of ephemeral storage allocated (512 MB), Time for which Provisioned Concurrency is enabled (500 hours), Number of requests for Provisioned Concurrency (2500000 per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),DynamoDB,DynamoDB provisioned capacity,1530,1307.4,17218.8,USD,,"Table class (Standard), Average item size (all attributes) (1 KB), Write reserved capacity term (1 year), Read reserved capacity term (1 year), Data storage size (4 TB)"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Acknowledgement,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
+,,,,,,,,,
+Changes:,,,,,,,,,
+1. Replace the Application load balancer and EC2 in the Application Servers by using API Gateway and Lambda,,,,,,,,,
+2. Replace the RDS by DynamoDB,,,,,,,,,
